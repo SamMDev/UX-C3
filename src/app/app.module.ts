@@ -19,6 +19,7 @@ import {AgGridModule} from 'ag-grid-angular';
 import { GridComponent } from './components/grid/grid.component';
 import { AnonymizationConfirmDialogComponent } from './tabs/anonymization/anonymization-configm-dialog/anonymization-confirm-dialog.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatCardModule,
     AgGridModule,
     MatDialogModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
