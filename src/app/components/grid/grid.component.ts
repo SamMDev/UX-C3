@@ -1,4 +1,4 @@
-import {Component, ElementRef, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild} from '@angular/core';
+import {Component, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild} from '@angular/core';
 import {ColDef, GridApi, GridOptions} from 'ag-grid-community';
 import {AgGridAngular} from 'ag-grid-angular';
 import {Observable, Subject} from 'rxjs';
@@ -59,7 +59,6 @@ export class GridComponent implements OnInit, OnDestroy {
 
 
   constructor(
-    private elRef: ElementRef,
   ) {
   }
 

@@ -45,7 +45,7 @@ export class AnonymizationComponent implements OnInit {
   constructor(
     private service: Service,
     public dialog: MatDialog,
-    private _snackBar: MatSnackBar,
+    private snackBar: MatSnackBar,
   ) { }
 
   ngOnInit(): void {
@@ -58,7 +58,7 @@ export class AnonymizationComponent implements OnInit {
         this.grid.api?.showLoadingOverlay();
         this.service.listSources().subscribe(res => {
           this.grid.rowData = res;
-          this._snackBar.open('Úspešne uložené');
+          this.snackBar.open('Úspešne uložené', 'Rozumiem', {duration: 3000});
         });
       }
     });
