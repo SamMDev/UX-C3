@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import 'ag-grid-community/src/styles/ag-grid.scss';
+/* Quartz Theme Specific CSS */
+@import 'ag-grid-community/src/styles/ag-theme-alpine/sass/ag-theme-alpine';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

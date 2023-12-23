@@ -1,0 +1,58 @@
+@import '@angular/material/theming';
+
+$sidebar-color: #f5f5f5;
+.sidebar-container {
+  display: flex;
+  height: 100%;
+
+  mat-sidenav-content {
+    width: 100%;
+    background-color: white;
+  }
+
+  mat-sidenav {
+    background-color: $sidebar-color;
+  }
+}
+
+
+mat-sidenav-container {
+  flex: 1;
+}
+@media (min-width: 600px) {
+  mat-sidenav {
+    width: 300px;
+    min-width: 200px;
+  }
+}
+@media (max-width: 599px) {
+  mat-sidenav {
+    width: 100%;
+  }
+}
+
+
+$active-card-color: #e0e0e0;
+// force remove card shadow
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none
+}
+.card {
+  border-radius: 0;
+  background-color: $sidebar-color;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $active-card-color;
+  }
+}
+.active-card {
+  background-color: $active-card-color;
+}
+.card-title-wrapper {
+  display: flex;
+  align-items: center;
+  mat-icon {
+    margin-right: 10px;
+  }
+}

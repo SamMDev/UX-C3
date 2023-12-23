@@ -1,0 +1,11 @@
+<app-grid-header label="Zdroje fyzických osôb">
+  <ng-container action-buttons>
+    <button mat-button [disabled]="!grid?.isSelectedRow" (click)="openDialog()">
+      <mat-icon>pan_tool</mat-icon>
+      Anonymizovať
+    </button>
+  </ng-container>
+</app-grid-header>
+
+<app-grid [selectionMode]="'multiple'" [colDefs]="colDefs" (gridReady)="loadData()">
+</app-grid>

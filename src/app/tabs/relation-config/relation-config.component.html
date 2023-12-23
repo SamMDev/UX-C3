@@ -1,0 +1,15 @@
+<app-grid-header label="Zdroje fyzických osôb">
+  <ng-container action-buttons>
+    <button mat-button>
+      <mat-icon>add</mat-icon>
+      Pridať
+    </button>
+    <button mat-button [disabled]="!grid?.isSelectedRow">
+      <mat-icon>edit</mat-icon>
+      Upraviť
+    </button>
+  </ng-container>
+</app-grid-header>
+
+<app-grid [colDefs]="colDefs" (gridReady)="loadData()">
+</app-grid>
